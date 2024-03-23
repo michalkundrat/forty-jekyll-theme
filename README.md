@@ -16,10 +16,16 @@ Simply fork this repository and start editing the `_config.yml` file!
 
 # Added Features
 
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* **[FormEasy](https://devapt.com/formeasy) contact form integration** - more information below.
 * Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
 * Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
 * Set **featured images** in front matter.
+
+## How to implement FormEasy
+FormEasy is a free and open source solution that lets you receive forms from your sites, apps and servers very easily.
+In order to make it functional for this theme, follow the steps shown on their [website](https://devapt.com/formeasy) (estimated 5 minutes).
+
+All of the coding for this theme that you need to do is already done - simply put your Google Apps Script deployment link into the _config.yml file and enjoy the form (provided that you have set up the App Script correctly).
 
 # Credits
 
