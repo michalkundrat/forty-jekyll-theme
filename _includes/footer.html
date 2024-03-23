@@ -1,4 +1,14 @@
+<!-- <script src="/../forty-jekyll-theme/assets/js/js-yaml.min.js"></script> -->
 <script>
+	// console.log("running");
+	// fetch("_config.yml")
+	// .then(response => response.text())
+	// .then(yamlText => {
+	// 	var data = jsyaml.load(yamlText);
+	// 	// Now you can access the values in the file like this:
+	// 	var value = data['google-script-url'];
+	// });
+	console.log({{ site.google_script_url}});
 	function submitForm() {
 		var data = {
 			"name": document.getElementById('name').value,
@@ -6,7 +16,8 @@
 			"message": document.getElementById('message').value
 		};
 
-		const url = "https://script.google.com/macros/s/your-script-id/exec";
+		const url = {{ "site.google-script-url" }};
+		console.log(url);
 
 		fetch(url, {
 			method: 'POST',
@@ -104,7 +115,6 @@
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
 			</ul>
 		</div>
 	</footer>
